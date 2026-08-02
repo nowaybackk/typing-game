@@ -22,10 +22,10 @@
 </main>
 <script>
 const GAMES=[
-{id:"joseon",title:"조선 묘호",description:"조선의 묘호를 순서대로 입력합니다.",lineName:"조선 묘호선",unit:"대",icon:"王",enabled:true,items:["태조","정종","태종","세종","문종","단종","세조","예종","성종","연산군","중종","인종","명종","선조","광해군","인조","효종","현종","숙종","경종","영조","정조","순조","헌종","철종","고종","순종"]},
-{id:"goryeo",title:"고려 묘호",description:"고려 묘호 순서 타자 연습입니다.",lineName:"고려 묘호선",unit:"대",icon:"高",enabled:false,items:[]},
-{id:"silla",title:"신라 묘호",description:"신라 묘호 순서 타자 연습입니다.",lineName:"신라 묘호선",unit:"대",icon:"新",enabled:false,items:[]},
-{id:"baekje",title:"백제 묘호",description:"백제 묘호 순서 타자 연습입니다.",lineName:"백제 묘호선",unit:"대",icon:"百",enabled:false,items:[]}
+{id:"joseon",title:"조선 왕조 묘호",description:"조선 왕조의 묘호를 순서대로 입력합니다.",lineName:"조선 왕조 묘호선",unit:"대",icon:"朝鮮",enabled:true,items:["태조","정종","태종","세종","문종","단종","세조","예종","성종","연산군","중종","인종","명종","선조","광해군","인조","효종","현종","숙종","경종","영조","정조","순조","헌종","철종","고종","순종"]},
+{id:"goryeo",title:"고려 왕조 묘호",description:"고려 왕조의 묘호를 순서대로 입력합니다.",lineName:"고려 왕조 묘호선",unit:"대",icon:"高麗",enabled:false,items:[]},
+{id:"silla",title:"신라 왕조 묘호",description:"신라 왕조의 묘호를 순서대로 입력합니다.",lineName:"신라 왕조 묘호선",unit:"대",icon:"新羅",enabled:false,items:[]},
+{id:"baekje",title:"백제 왕조 묘호",description:"백제 왕조의 묘호를 순서대로 입력합니다.",lineName:"백제 왕조 묘호선",unit:"대",icon:"百濟",enabled:false,items:[]}
 ];
 const $=id=>document.getElementById(id),E={select:$("select"),play:$("play"),gameGrid:$("gameGrid"),backBtn:$("backBtn"),repeat:$("repeat"),startBtn:$("startBtn"),resetBtn:$("resetBtn"),current:$("current"),cpm:$("cpm"),accuracy:$("accuracy"),elapsed:$("elapsed"),lineBadge:$("lineBadge"),progress:$("progress"),stations:$("stations"),countdown:$("countdown"),countnum:$("countnum"),countlabel:$("countlabel"),status:$("status"),repeatText:$("repeatText"),itemNumber:$("itemNumber"),targetItem:$("targetItem"),nextPreview:$("nextPreview"),typingInput:$("typingInput"),completed:$("completed"),mistakes:$("mistakes"),best:$("best"),feedback:$("feedback"),result:$("result"),resultText:$("resultText")};
 const S={game:null,running:false,counting:false,started:0,timer:null,countTimer:null,index:0,round:1,totalRounds:1,totalTyped:0,correctTyped:0,mistakes:0,best:0};
